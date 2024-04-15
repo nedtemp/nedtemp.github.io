@@ -20,115 +20,103 @@
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-        body, html {
-            font-family: 'Lato', sans-serif;
-            color: #f5f3d7;
-            background-color:#000 ;
-            height: 100%;
-            
+    <style>
+        body{
+            font-family: 'Quattrocento Sans', sans-serif;
         }
 
         .content{
-            width: 100vw; /* Abarca el 100% del ancho del viewport */
-             height: 100vh
-        }
-
-
-        .grid-container {
-            position: relative;
-            margin: 0;
-            display: grid;
-            grid-template-rows: 8% 60% 24% 8%;
+            width: 100%;
             height: 100vh;
-            }
-
-            .nav {
-                /*background-color: #f2f2f2;*/
-                max-width: 60%;
-                display: flex;
-                list-style: none;
-                justify-content: space-evenly;
-                align-items: center;
-            }
-
-                .nav a{
-                    text-decoration: none;
-                    font-size: 1.5em;
-                    color: #000;
-                    color: #f5f3d7;
-                }
-
-                .nav a:hover{
-                    background-color: #f5f3d7;
-                    color: #000;
-                }
-
-            .image {
-                /*background-color: #e5e5e5;*/
-                max-width: 100%;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-            }
-
-                .image img{
-                    height: 91%;
-                }
-
-            .menu {
-                /*background-color: #cccccc;*/
-                max-width: 100%;
-                display: flex;
-                flex-direction: column;
-                
-                justify-content: space-evenly;
-                align-items: center;
-                flex-wrap: no-wrap;
-                text-align: center;
-
-                overflow-wrap: break-word;
-            }
-
-                .menu a{
-                    text-decoration: none;
-                    color: #f5f3d7;
-                    font-size: 3em;
-                    font-weight: 900;
-                    font-style: normal;
-                    overflow-wrap: break-word;
+            position: absolute;
         }
 
 
-                .menu a:hover {
-                    color: #000;
-                    background-color: #f5f3d7;
+        .nav {
+            max-width: 60%;
+            height: 7%;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
 
-                }
+        .nav a{
+            text-decoration: none;
+            color: #000;
 
+        }
 
-            .footer {
-                max-width: 100%;
-                /*background-color: #b8b8b8;*/
-                display: flex;
-                justify-content: space-evenly;
-            }
+        .image{
+            height: 55%;
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-             .gif{
-                position: absolute;
-                width: 8.7em;
-                left: 56%;
-                TOP: 5%;
-              }
+        .image img{
+            max-height: 90%;
+        }
+
+        .menu{
+            height: 31%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            font-size: 3em;
+            line-height: 40px;
+        }
+
+        .menu a{
+            
+            font-weight: 700;
+            text-decoration: none;
+            color: #000;
+
+        }
+
+        .footer{
+            height: 7%;
+            max-width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer img{
+            height: 90%;
+        }
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+        .content{
+            margin: 0px auto;
+            width: 40%;
+            height: 100vh;
+            position: absolute;
+        }
+
+}
 
 
 
     </style>
 </head>
 <body>
-<div class="contnet">
-    <div class="grid-container">
+<div class="content">
+
         <nav class="nav">
             <a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
             <a href="#"><li><i class="fa-solid fa-envelope"></i></li></a>
@@ -140,20 +128,23 @@
         </div>
                 
         <div class="menu">
-            <a href="8.html">ALEATORIO</a>
-            <a href="3.html">RECIENTEzS</a>
-            <a href="about.html">ABOUT</a>
+            <div><a href="8.html">ALEATORIO</a></div>
+            <div><a href="3.html">RECIENTE</a></div>
+            <div><a href="about.html">INDEX</a></div>
+            <div><a href="about.html">ABOUT</a></div>
         </div>
 
         <footer class="footer" style="max-width: 100%; margin: auto;">
             <img style="max-width: 100%; height: auto;" src="imagenes/svgg.png" alt="Descripción de la imagen">
         </footer>
 
-        <div>
-            <img class="gif" src="imagenes/gifweb.gif">
-        </div>
-    </div>
+        
 </div>
+
+<div style="position: absolute; width: 100vw; height: 100vh;  overflow: hidden;">
+<img style="position: relative; width: 20%; top: 20%; left: 90%; transform: translate(-50%, -50%);" src="imagenes/gifweb.gif">    
+</div>
+
 
 <script></script>
 </body>
