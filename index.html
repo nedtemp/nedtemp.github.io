@@ -41,24 +41,28 @@
 
 
         .nav {
-            max-width: 60%;
-            height: 7%;
+            max-width: 50%;
+            height: 8%;
             list-style: none;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
-            font-size: 1.3em;
+            font-size: 1.5em;
         }
 
         .nav a{
+            padding-top: 4%;
             text-decoration: none;
             color: #f5f3d7;
+        }
 
+        .nav a:hover {
+            color: #000;
         }
 
         .image{
-            height: 55%;
+            height: 50%;
             max-width: 100%;
             display: flex;
             text-align: center;
@@ -68,11 +72,11 @@
 
         .image img{
             margin: auto, 0px;
-            max-height: 90%;
+            max-height: 85%;
         }
 
         .menu{
-            height: 31%;
+            height: 30%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -83,15 +87,18 @@
         }
 
         .menu a{
-            
             font-weight: 700;
             text-decoration: none;
             color: #f5f3d7;
+        }
 
+        .menu a:hover {
+            color: #000;
+            background: #f5f3d7;
         }
 
         .footer{
-            height: 7%;
+            height: 12%;
             max-width: 100%;
             display: flex;
             justify-content: center;
@@ -99,8 +106,22 @@
         }
 
         .footer img{
-            height: 90%;
+            height: 30%;
         }
+
+        .relative {
+            width: 30%;
+            position: relative; 
+            top: -90%;
+            right: -60%;
+            overflow: hidden;
+        }
+
+        .relative img{
+            width: 100%;
+        }
+
+
 
 @media screen and (min-width: 768px) {
     body {
@@ -137,23 +158,23 @@
                 
         <div class="menu">
             <div><a href="8.html">ALEATORIO</a></div>
-            <div><a href="3.html">RECIENTES</a></div>
+            <div><a href="3.html">RECIENTE</a></div>
             <div><a href="about.html">INDEX</a></div>
             <div><a href="about.html">ABOUT</a></div>
         </div>
 
-        <footer class="footer" style="max-width: 100%; margin: auto;">
-            <img src="imagenes/svgg.png" alt="Descripción de la imagen">
+        <footer class="footer">
+            <img src="imagenes/nedfonts.png" alt="Descripción de la imagen">
         </footer>
 
         
+
+
+<div class="relative">
+    <img src="imagenes/gifweb.gif">
 </div>
 
-<div style="overflow: hidden;">
-    <img style="position: relative; width: 30%; top: 20px; left: 66%; " src="imagenes/gifweb.gif">   
-</div> 
-
-
+</div>
 
 <script></script>
 </body>
