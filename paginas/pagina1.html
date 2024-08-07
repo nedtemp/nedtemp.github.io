@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- FAVICON -->
+<link rel="icon" type="image/x-icon" href="../imagenes/favico.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<title>nedtemp - cuando era niño</title>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+
+  body{
+    font-size: 20px;
+    background: #000;
+    height: 100vh;
+  }
+
+  .post{
+    display: flex;
+    overflow-x: auto; /* Hacer que sea desplazable horizontalmente */
+    border: none;
+  }
+
+  .imagen {
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 3s ease;
+  }
+  .imagen.ampliada {
+    transform: scale(1.2);
+  }
+
+
+  .barra-inferior {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    box-sizing: border-box; /* Esto asegura que el padding se incluya en el 5% de la altura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .barra-inferior a{
+    margin: .5em;
+    font-size: 1em;
+    color:#f5f3d7 ;
+  }
+
+
+.barra-superior{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 2.5em;
+  background-color:#000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;;
+  z-index: 9999;
+  }
+
+.barra-superior a{
+  text-decoration: none;
+  color: #f5f3d7;
+  font-size: 1.2em;
+  margin-right: .5em;
+  margin-left: .5em;
+  }
+
+
+  @media screen and (max-width: 992px) {
+    .post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+
+    .imagen {
+    width: 90%;
+}
+
+    .boton {
+        cursor: pointer;
+    }
+
+      
+    }
+
+
+
+</style>
+</head>
+
+<body>
+
+
+ <div class="barra-superior">
+    <a href="../index.html"> <i class="fa-solid fa-house"></i> </a>
+  </div>
+
+
+
+<a href="#"><i id="copiar" style="color: #f5f3d7; position: fixed; right: 3%; top: 8%; font-size: 1.6em; z-index: 9998;" class="fa-solid fa-share-nodes"></i></a>
+
+<div class="post">
+<img class="imagen" src="Cuandofanzine/1.webp" alt="Imagen 1" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/2.webp" alt="Imagen 2" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/3.webp" alt="Imagen 3" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/4.webp" alt="Imagen 4" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/5.webp" alt="Imagen 5" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/6.webp" alt="Imagen 6" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/7.webp" alt="Imagen 7" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/8.webp" alt="Imagen 8" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/9.webp" alt="Imagen 9" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/10.webp" alt="Imagen 10" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/11.webp" alt="Imagen 11" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/12.webp" alt="Imagen 12" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/13.webp" alt="Imagen 13" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/14.webp" alt="Imagen 14" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/15.webp" alt="Imagen 15" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/16.webp" alt="Imagen 16" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/17.webp" alt="Imagen 17" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/18.webp" alt="Imagen 18" onclick="ampliarImagen(this)">
+<img class="imagen" src="Cuandofanzine/19.webp" alt="Imagen 19" onclick="ampliarImagen(this)">
+</div>
+<!--esto para las 19 imágenes -->
+
+
+  <div class="barra-inferior">
+      <a id="redireccionar" class="boton" href="#">
+        <i class="fa-solid fa-dice" style="font-size: 1.6em;"></i>
+      </a>
+  </div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
