@@ -1,0 +1,61 @@
+body{
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.home{
+	position: fixed;
+	top: 0;
+	font-size: 30px;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0); /* Azul con 50% de opacidad */
+}
+
+    .home a{
+    	color: #000;
+    }
+
+		.foto{
+			margin: 80px auto 0 auto;
+			width: 70%;
+		}
+			.foto img{
+					max-width: 100%;
+				}
+
+		 .nombre{
+		 	margin: .3em auto;
+		 }
+
+
+	.contacto{
+		text-align: right;
+	}
+
+	.back{
+		width: 100%;
+		margin: 0px auto;
+		font-size: 2rem;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
+				.back a{
+					color: #000;
+				}
+				
+						.back a:hover{
+							color: #fff;
+						}
+
+.info{
+	margin: 0 auto;
+	width: 90%;
+}
+
+	@media screen and (min-width: 768px) {
+		.padre {
+			margin: 0 auto;
+			width: 30%;
+		}
+	}

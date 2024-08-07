@@ -1,0 +1,83 @@
+/* HTML */
+
+body{
+	font-family: helvetica, sans-serif;	
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.home {
+	position: fixed;
+	top: 0;
+	font-size: 30px;
+	padding: 20px;
+	z-index: 999;
+}
+
+   	.home a{
+   		color: #000;
+   	}
+
+
+.aviso {
+	margin-top: 20%;
+}
+
+		/* FLASHES */
+
+.flashes{
+	/*margin-top: .5em;*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	overflow-y: auto;
+}
+
+	.flashes img{
+		width: 30%;
+		cursor: pointer;
+	}
+
+
+	.flashes img:hover {
+		transform: rotate(6deg)
+	}
+
+
+/* LIGHTBOX */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 255, 0, 0.4); /* Fondo semitransparente */
+    z-index: 9999; /* Asegura que esté por encima de todo el contenido */
+    text-align: center; /* Centra la imagen */
+}
+
+		.lightbox img {
+		    max-width: 90%;
+		    max-height: 90%;
+		    margin: auto;
+		    display: block;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		}
+
+	.lightbox.active {
+	    display: block;
+	}
+
+
+
+@media screen and (min-width: 768px) {
+	.flashes img{
+		width: 20%;
+	}
+}
