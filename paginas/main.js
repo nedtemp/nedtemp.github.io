@@ -30,7 +30,7 @@
 
     document.getElementById('redireccionar').addEventListener('click', function() {
       // Generar un número aleatorio entre 1 y 38
-      var numeroAleatorio = Math.floor(Math.random() * 39) + 1;
+      var numeroAleatorio = Math.floor(Math.random() * 40) + 1;
 
       // Construir la URL de la página aleatoria
       var urlPaginaAleatoria = 'pagina' + numeroAleatorio + '.html';
