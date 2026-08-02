@@ -91,6 +91,28 @@ body{
     margin: 0px;
     }
 
+.nuevo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #22c55e;
+  color: white;
+  font-size: 0.65em;
+  font-weight: bold;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+
+a:hover .nuevo {
+  background-color: #22c55e !important;
+  color: white !important;
+}
+
 @media screen and (min-width: 768px) {
     .contenedor{
         margin: 0 auto;
