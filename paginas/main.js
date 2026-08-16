@@ -1,3 +1,20 @@
+// GOOGLE ANALYTICS
+const gaScript = document.createElement('script');
+gaScript.async = true;
+gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-NSZDPW42F5';
+document.head.appendChild(gaScript);
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+  dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+gtag('config', 'G-NSZDPW42F5');
+
+
+
 //esto es del boton de compartir
     document.getElementById('copiar').addEventListener('click', function() {
       // Obtener la URL actual del navegador
